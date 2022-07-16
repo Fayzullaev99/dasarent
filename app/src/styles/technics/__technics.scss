@@ -1,0 +1,49 @@
+.tex{
+  background: $blue;
+  padding: 50px 0 40px;
+  &__title{
+    font-family: $lato;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  &__type{
+    font-family: $lato;
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: left;
+    color: white;
+  }
+  &__head{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50px 50px;
+    grid-gap: 30px;
+  }
+  &__head-link{
+    padding: 0px 20px;
+    width: 100%;
+    background: $gold;
+    font-family: $lato;
+    font-weight: 400;
+    font-size: 18px;
+    color: #323232;
+    letter-spacing: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.active{
+      background:#EDEDED;
+    }
+  }
+  &__body{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+  }
+  &__box{
+    margin-bottom: -20px;
+  }
+}
